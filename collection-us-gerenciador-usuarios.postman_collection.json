@@ -15,7 +15,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"cpfCnpj\": 99999999999,\r\n    \"senha\": \"AUGUSTO123\"\r\n}",
+					"raw": "{\r\n    \"cpfCnpj\": 88888888888,\r\n    \"senha\": \"JOSE123\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -46,7 +46,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJTaXN0ZW1hIFVTIC0gR2VyZW5jaWFkb3IgZGUgVXN1w6FyaW9zIiwic3ViIjoiOWFmMGZmNTktMjljZi00YzViLTgwZmUtYzU3Njk4ZTc4Y2RlIiwiaWF0IjoxNjIxMzkwMzk2LCJleHAiOjE2MjE0NzY3OTZ9.m3Ba0B23y6yHy-VCvxk1JNitS3R2o8vzvPvY22akXCY",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJTaXN0ZW1hIFVTIC0gR2VyZW5jaWFkb3IgZGUgVXN1w6FyaW9zIiwic3ViIjoiOWFmMGZmNTktMjljZi00YzViLTgwZmUtYzU3Njk4ZTc4Y2RlIiwiaWF0IjoxNjIxNDgwNTQzLCJleHAiOjE2MjE1NjY5NDN9.j3JxUge682Pabd3DjTGkecMgM0prYtZrFdpFDOAgEFI",
 							"type": "string"
 						}
 					]
@@ -127,7 +127,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJTaXN0ZW1hIFVTIC0gR2VyZW5jaWFkb3IgZGUgVXN1w6FyaW9zIiwic3ViIjoiOWFmMGZmNTktMjljZi00YzViLTgwZmUtYzU3Njk4ZTc4Y2RlIiwiaWF0IjoxNjIxMzkzNjQ0LCJleHAiOjE2MjE0ODAwNDR9.KSqFBdcVnJPhiEooOE_mp8RpebfmSWjuQPgh8gnSkME",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJTaXN0ZW1hIFVTIC0gR2VyZW5jaWFkb3IgZGUgVXN1w6FyaW9zIiwic3ViIjoiOWFmMGZmNTktMjljZi00YzViLTgwZmUtYzU3Njk4ZTc4Y2RlIiwiaWF0IjoxNjIxNDgwNTQzLCJleHAiOjE2MjE1NjY5NDN9.j3JxUge682Pabd3DjTGkecMgM0prYtZrFdpFDOAgEFI",
 							"type": "string"
 						}
 					]
@@ -229,6 +229,40 @@
 					]
 				},
 				"description": "Deleta o usuario da base de dados."
+			},
+			"response": []
+		},
+		{
+			"name": "deletaPerfilUsuario",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJTaXN0ZW1hIFVTIC0gR2VyZW5jaWFkb3IgZGUgVXN1w6FyaW9zIiwic3ViIjoiMTA3MWJhYzctNDQ3YS00MzkwLTgwZDktNjAwYTMzNzYwZjViIiwiaWF0IjoxNjIxNDgwNjIxLCJleHAiOjE2MjE1NjcwMjF9.LrFGr01zy1Wf5ge3Obri_S_eMgVRl8QM1OnT5TAIRXU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/us-gerenciador-usuarios/usuario/deletaPerfil/99995/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"us-gerenciador-usuarios",
+						"usuario",
+						"deletaPerfil",
+						"99995",
+						"1"
+					]
+				},
+				"description": "Rota de delete do perfil de um usuário"
 			},
 			"response": []
 		},
